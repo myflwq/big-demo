@@ -1,31 +1,26 @@
 import React from 'react';
-import Drawer from 'material-ui/Drawer';
-import AppBar from 'material-ui/AppBar';
-import RaisedButton from 'material-ui/RaisedButton';
 
 class Header extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {open: false};
+  getStyles() {
+    return {
+      root: {
+        height:'200px',
+        color: '#fff',
+        backgroundColor: '#00bcd4',
+        borderColor: '#2db7f5',
+        padding: '4px 15px 5px 15px',
+        fontSize: '14px'
+      }
+    }
   }
-
-  handleToggle(){
-    this.setState({open: !this.state.open})
-  };
-
-  render() {
-    return (
-      <div>
-        <RaisedButton
-          label="Toggle Drawer"
-          onTouchTap={this.handleToggle.bind(this)}
-        />
-        <Drawer width={200} openSecondary={true} open={this.state.open} >
-          <AppBar title="RightBar" />
-        </Drawer>
+  render () {
+    const styles = this.getStyles();
+    return(
+      <div style={styles.root}>
+      header
       </div>
-    );
+    )
   }
 }
+
 export default Header;

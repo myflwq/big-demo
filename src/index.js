@@ -10,7 +10,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 class App extends React.Component {
   getChildContext() {
-   return {muiTheme: getMuiTheme()};//传值myTheme改变颜色
+   return {muiTheme: getMuiTheme()};
  }
   render () {
 
