@@ -9,9 +9,9 @@ class Footer extends React.Component {
         height:'200px',
         color: '#fff',
         backgroundColor: '#212121',
-        borderColor: '#2db7f5',
-        padding: '4px 15px 5px 15px',
-        fontSize: '14px'
+        textAlign:'center',
+        lineHeight:'200px',
+        fontSize: '30px'
       }
     }
   }

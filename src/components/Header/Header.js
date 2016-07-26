@@ -1,15 +1,17 @@
 import React from 'react';
-
+// import Button from './NavButton';
+import Search from './Search';
+import LeftNav from './LeftNav';
 class Header extends React.Component {
   getStyles() {
     return {
       root: {
-        height:'200px',
+        height:'260px',
         color: '#fff',
         backgroundColor: '#00bcd4',
-        borderColor: '#2db7f5',
-        padding: '4px 15px 5px 15px',
-        fontSize: '14px'
+        textAlign:'center',
+        lineHeight:'200px',
+        fontSize: '30px',
       }
     }
   }
@@ -17,7 +19,8 @@ class Header extends React.Component {
     const styles = this.getStyles();
     return(
       <div style={styles.root}>
-      header
+        <LeftNav />
+        <Search />
       </div>
     )
   }
