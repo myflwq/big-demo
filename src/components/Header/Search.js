@@ -12,6 +12,13 @@ class Search extends React.Component {
         textAlign:'center',
         lineHeight:'50px',
         fontSize: '30px',
+        paddingTop:'120px',
+        paddingBottom:'55px'
+      },
+      all:{
+        margin:'0',
+        fontSize:'48px',
+        lineHeight:'1.1'
       }
     }
   }
@@ -30,7 +37,7 @@ class Search extends React.Component {
     }
     return(
       <div style={styles.root}>
-        <p>ALL</p>
+        <p style={styles.all}>ALL</p>
         <TextField
            hintText="搜索"
            fullWidth={true}

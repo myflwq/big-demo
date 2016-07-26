@@ -7,7 +7,7 @@ class BlogCard extends Component {
     const styles = {
       left:{
         float:"left",
-        width:"15%",
+        width:"12%",
         height:"100px",
         color:'#fff',
         backgroundColor: "#00bcd4",
@@ -21,19 +21,21 @@ class BlogCard extends Component {
       right:{
         float:"left",
         paddingLeft:"2%",
-        width:"83%",
+        width:"86%",
         height:"100px",
         backgroundColor:"#fff",
         borderColor:"#D1DCE0",
       },
       root:{
-        width:"85%",
+        width:"95%",
+        maxWidth:'850px',
         margin:"20px auto",
+        color:'#777777',
         boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)',
         fontSize: '14px',
         overflow:"hidden",
-        'hover':{
-          boxShadow: '0 2px 10px 0 rgba(0, 0, 0, 0.6), 0 2px 15px 0 rgba(0, 0, 0, 0.2)',
+        ':hover':{
+          boxShadow: '0 2px 10px 0 rgba(0, 0, 0, 0.26), 0 2px 7px 0 rgba(0, 0, 0, 0.22)',
           transition: 'all .5s ease'
         }
 
@@ -44,7 +46,7 @@ class BlogCard extends Component {
             <div style={styles.left}>{this.props.index}</div>
             <div style={styles.right}>
               <h4>{this.props.title}</h4>
-              <p>{this.props.data}</p>
+              <p>{this.props.date}</p>
             </div>
           </div>
     )
@@ -55,4 +57,4 @@ BlogCard.defaultProps={
   title:"red",
   date:"red"
 }
-export default BlogCard;
+export default Radium(BlogCard);

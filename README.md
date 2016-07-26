@@ -7,3 +7,8 @@
 #### hover时，必须安装Radium 包，才能解析
 
 npm i --save radium
+
+#### svg可缩放矢量图标，或者字体图标
+
+#### goole翻墙
+https://laod.org/hosts/2016-google-hosts.html

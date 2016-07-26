@@ -2,10 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import Header from './components/Header/Header.js';
 import List from './components/List/List.js';
-import Footer from './components/Footer';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import RaisedButton from 'material-ui/RaisedButton';
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import Footer from './components/Footer/Footer';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import AppBar from 'material-ui/AppBar';
-
+import Hamburger from './Hamburger'
 export default class LeftNav extends React.Component {
 
   constructor(props) {
@@ -18,10 +18,8 @@ export default class LeftNav extends React.Component {
 
     return (
       <div>
-        <AppBar
-         iconClassNameRight="muidocs-icon-navigation-expand-more"
-         onTouchTap={this.handleToggle.bind(this)}
-         zDepth={0}
+        <Hamburger
+         onClick={this.handleToggle.bind(this)}
         />
         <Drawer
           docked={false}
