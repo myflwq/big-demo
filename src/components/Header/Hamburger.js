@@ -1,11 +1,14 @@
 import React from 'react';
 import IconButton from 'material-ui/IconButton';
 import MenuButton from 'material-ui/svg-icons/navigation/menu';
+import NavBar from './NavBar';
 export default class Hamburger extends React.Component{
+  handelOpen(){
+    this.refs.navbar.handleToggle();
+  }
   render(){
     let styles={
       icon:{
-        marginLeft:'8x',
         width: '52px',
         height: '52px',
         position:'absolute',
@@ -18,11 +21,13 @@ export default class Hamburger extends React.Component{
 
       }
     }
+
     return (
       <div>
-        <IconButton  style={styles.icon} iconStyle={styles.svg}>
-          <MenuButton  color='#fff'/>
-        </IconButton>
+      <IconButton tooltip="menu" style={styles.icon} iconStyle={styles.svg} onClick={this.handelOpen.bind(this)}>
+      <MenuButton  color='#fff'/>
+    </IconButton>
+        <NavBar ref='navbar'/>
       </div>
     )
   }
