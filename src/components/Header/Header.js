@@ -15,11 +15,12 @@ class Header extends React.Component {
     }
   }
   render () {
+    // console.log(this.props.change);
     const styles = this.getStyles();
     return(
       <div style={styles.root}>
         <Hamburger />
-        <Search />
+        <Search handleSearch={this.props.change}/>
       </div>
     )
   }

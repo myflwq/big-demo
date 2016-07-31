@@ -14,13 +14,23 @@ class App extends React.Component {
   getChildContext() {
    return {muiTheme: getMuiTheme()};//传值myTheme改变颜色
   }
-
+  constructor(){
+    super();
+    this.state={
+      search:''
+    }
+  }
+  cardSearch(x){
+    this.setState({
+      search:x
+    })
+  }
   render () {
-
     return(
       <div>
-        <Header />
-        <List />
+        
+        <Header change={this.cardSearch.bind(this)}/>
+        <List search={this.state.search}/>
         <Footer />
       </div>
     )

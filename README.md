@@ -12,3 +12,10 @@ npm i --save radium
 
 #### goole翻墙
 https://laod.org/hosts/2016-google-hosts.html
+
+
+#### 表单都有onChange事件，当内容发生改变是出发
+
+#### 通过event.target.value 可以获取输入框内容
+
+#### state的值改变只能通过setState

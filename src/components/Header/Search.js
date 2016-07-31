@@ -3,7 +3,13 @@ import SearchBtn from 'material-ui/svg-icons/action/search';
 import TextField from 'material-ui/TextField';
 
 class Search extends React.Component {
+  handleInput(e){
+    let x = e.target.value;
+    // console.log(x);
+    this.props.handleSearch(x);
+  }
   render () {
+    // console.log(this.props.handleSearch);
     let styles={
       root:{
         padding:'50px 10px'
@@ -54,7 +60,9 @@ class Search extends React.Component {
             underlineFocusStyle={styles.underlineStyle}
             hintStyle={styles.hintStyle}
             inputStyle={styles.inputStyle}
-            style={styles.text} />
+            style={styles.text}
+            onChange={this.handleInput.bind(this)}
+          />
         </div>
       </div>
     )
