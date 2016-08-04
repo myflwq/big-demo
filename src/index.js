@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import Header from './components/Header/Header.js';
 import List from './components/List/List.js';
 import Footer from './components/Footer/Footer';
+import Home from './Home';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -28,10 +29,8 @@ class App extends React.Component {
   render () {
     return(
       <div>
-        
-        <Header change={this.cardSearch.bind(this)}/>
-        <List search={this.state.search}/>
-        <Footer />
+
+        <Home />
       </div>
     )
   }
@@ -42,3 +41,6 @@ App.childContextTypes = {
 
 
 render(<App />, document.getElementById('root'));
+// <Header change={this.cardSearch.bind(this)}/>
+// <List search={this.state.search}/>
+// <Footer />

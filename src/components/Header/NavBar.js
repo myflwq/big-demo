@@ -37,9 +37,7 @@ class NavBar extends React.Component {
         >
           <p style={styles.title}>好多视频网</p>
           <div style={styles.menu}>
-            <MenuItem onTouchTap={this.handleClose.bind(this)}>笔记列表</MenuItem>
-            <MenuItem onTouchTap={this.handleClose.bind(this)}>登陆</MenuItem>
-            <MenuItem onTouchTap={this.handleClose.bind(this)}>注册</MenuItem>
+
           </div>
         </Drawer>
       </div>
