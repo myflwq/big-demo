@@ -24,7 +24,7 @@ class List extends Component {
   // console.log(Cards.length);
   // console.log(this.props.search);
   let posts = this.state.posts
-  console.log(posts);
+  // console.log(posts);
   var blogCards = [];
     if (this.props.search=='') {
       map((b) =>  {
@@ -38,7 +38,6 @@ class List extends Component {
         let query=new RegExp(this.props.search,"i");
         for (var key in posts) {
           if (query.test(posts[key].title)) {
-            console.log("aaaa");
             blogCards.push(<BlogCard title={posts[key].title} date={posts[key].date} index={posts[key].index} key={Math.random()}/>)
           }
         }
