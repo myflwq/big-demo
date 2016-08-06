@@ -1,21 +1,33 @@
-## TASK010: webpack hot reload
+### react-router里实现页面跳转用link
 
+### 路由在激活状态的设置
+```
+activeStyle={{color: 'red'}}
+```
 
-#### 项目运行步骤
+### 根目录一直处于激活状态(如App.js)，使子路由激活时，根目录不变
 
- npm start
-#### hover时，必须安装Radium 包，才能解析
+```
+onlyActiveOnIndex={true}
+```
 
-npm i --save radium
+#### SPA
 
-#### svg可缩放矢量图标，或者字体图标
+单页面应用，为移动互联网时代而生，singl page application 单页面应用
 
-#### goole翻墙
-https://laod.org/hosts/2016-google-hosts.html
+#### URL
 
+统一资源定位符
 
-#### 表单都有onChange事件，当内容发生改变是出发
+#### json数据保存到github，用ajax请求获取
 
-#### 通过event.target.value 可以获取输入框内容
+json 可用key值进行循环获取数据
+```
+var obj = {};
+for(var k in obj) {
 
-#### state的值改变只能通过setState
+    //遍历对象，k即为key，obj[k]为当前k对应的值
+    console.log(obj[k]);
+
+}
+```

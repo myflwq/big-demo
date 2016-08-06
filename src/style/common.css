@@ -1,0 +1,178 @@
+html {
+  font-family: sans-serif;
+  background-color: #fafafa;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.clearfix:before,.clearfix:after {
+  content: " ";
+  display: block;
+}
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  color: #727272;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.home{
+  width:100vw;
+  height:100vh;
+  background: url("http://img2.niutuku.com/desk/1207/0852/ntk49327.jpg") no-repeat fixed center center/cover;
+  text-align:center;
+  color:#fff;
+  padding-top:33vh;
+  font-size:30px;
+}
+.home .text{
+  background-color: rgba(0,0,0,0.2);
+  padding: 10vh 0;
+  text-align: center;
+
+}
+.home span{
+  color:#83EFEF;
+
+}
+
+
+.account {
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.account .content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 15vh;
+}
+.account #echarts{
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 40px;
+  width: 90%;
+  height: 500px;
+}
+.account .user-info img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+.account .user-info ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.account .user-info li {
+  flex-grow: 1;
+  border-left: 1px solid rgba(0,0,0,0.1);
+}
+.account .user-info li:first-child{
+  border-left: none;
+}
+.account .user-info li span {
+  display: block;
+  font-size: 14px;
+}
+.account .user-info li b {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.user-repos {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.user-repos li {
+  padding: 3vh 0;
+  line-height: 30px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.user-repos li div{
+  display: flex;
+  justify-content: space-between;
+}
+.user-repos li .name{
+  font-size: 16px;
+  font-weight: 500;
+  color: #00bcd4;
+}
+.user-repos li .desc{
+  font-size: 15px;
+}
+.user-repos li .lang{
+  font-size: 14px;
+}
+
+.search{
+  padding:50px 10px;
+}
+.line{
+  margin-top:20px;
+  text-align:center;
+}
+.search h1{
+  color:#fff;
+  font-size:48px;
+  font-weight:400;
+  text-align:center;
+}
+.line span{
+  background-color:#fff;
+  position:relative;
+}
+
+
+
+.list{
+  width:95%;
+  max-width:850px;
+  margin:20px auto;
+  color:#777777;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  font-size: 14px;
+  overflow:hidden;
+}
+.list:hover{
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.26), 0 2px 7px 0 rgba(0, 0, 0, 0.22);
+  transition: all .5s ease;
+}
+.list .left{
+  float:left;
+  width:12%;
+  height:100px;
+  color:#fff;
+  background-color: #00bcd4;
+  border-color: #44BBE6;
+  line-height:100px;
+  text-align:center;
+  font-weight: 900;
+  font-size: 18px;
+}
+.list .right{
+  float:left;
+  padding-left:2%;
+  width:86%;
+  height:100px;
+  background-color:#fff;
+  border-color:#D1DCE0;
+  padding-top:25px;
+}
