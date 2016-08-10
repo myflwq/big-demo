@@ -4,6 +4,8 @@ import IconButton from 'material-ui/IconButton';
 import MenuButton from 'material-ui/svg-icons/navigation/menu';
 import { Route, IndexRoute } from 'react-router';
 import NavBar from './NavBar';
+import Footer from './Footer';
+
 
 class App extends React.Component {
 
@@ -41,8 +43,10 @@ class App extends React.Component {
           </IconButton>
           <NavBar ref='navbar'/>
         </div>
-
-        {this.props.children}
+        <div style={{minHeight:'450px'}}>
+          {this.props.children}
+        </div>
+        <Footer />
       </div>
     )
   }
