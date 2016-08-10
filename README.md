@@ -31,3 +31,43 @@ for(var k in obj) {
 
 }
 ```
+#### 路由变量 params from react-router
+
+在routes里配置
+```
+<Route path="blog/:title" component={Post} />
+```
+在Post.js中用this.props.params.title获取
+
+#### Post.js里的文件共用一个路由，在posts文件夹下新建.md文件，从github上axios请求获取
+
+#### 解析.md文件，安装marked包，并导入
+```
+npm i --save marked
+```
+#### hashHistory引入BlogCard.js 应用push方法
+跳转路径的功能
+```
+handleClick(){
+  hashHistory.push(`blog/${this.props.url}`);
+}
+```
+也可以用context推送路由,上下文推送
+
+```
+BlogCard.contextTypes = {
+  router:React.PropTypes.object.isRequired
+}
+
+handleClick(){
+    this.context.router.push(`blog/${this.props.url}`);
+}
+```
+
+### 获取当前路径来更改当前显示内容
+
+```
+组件名.contextTypes = {
+  router:React.PropTypes.object.isRequired
+}
+```
