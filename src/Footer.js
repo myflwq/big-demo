@@ -1,5 +1,4 @@
 import React from 'react';
-import pic from './img/1.png';
 class Footer extends React.Component {
   getStyles() {
     return {
@@ -25,7 +24,7 @@ class Footer extends React.Component {
     const styles = this.getStyles();
     return(
       <div style={styles.footer}>
-        <img src={pic} style={styles.img}/>
+        <img src='https://raw.githubusercontent.com/myflwq/big-demo/master/src/img/1.png' style={styles.img}/>
       </div>
     )
   }
