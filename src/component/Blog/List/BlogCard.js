@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Radium from 'radium';
 import {hashHistory} from 'react-router';
 
 class BlogCard extends Component {
@@ -32,7 +31,7 @@ BlogCard.contextTypes = {
 }
 BlogCard.defaultProps={
   index:1,
-  title:"red",
+  title:"JavaScript",
   date:"2016.6.1"
 }
-export default Radium(BlogCard);
+export default BlogCard;

@@ -3,6 +3,9 @@ import axios from 'axios';
 import marked from 'marked';
 import hljs from 'highlight.js';
 import CircularProgress from 'material-ui/CircularProgress';
+import IconButton from 'material-ui/IconButton';
+import ArrowBack from 'material-ui/svg-icons/navigation/arrow-back';
+import {hashHistory} from 'react-router';
 
 class Post extends React.Component {
   constructor(){
@@ -22,7 +25,25 @@ class Post extends React.Component {
        });
     });
   }
+  handleBack(){
+    // console.log(hashHistory);
+    hashHistory.goBack();
+  }
   render () {
+    let styles={
+      smallIcon: {
+        width: 32,
+        height: 32,
+      },
+      small: {
+        width: 52,
+        height: 52,
+        padding: 10,
+        position:'absolute',
+        top:'10px',
+        right:'10px',
+      },
+    }
     marked.setOptions({
       highlight: function (code) {
         return hljs.highlightAuto(code).value;
@@ -36,7 +57,11 @@ class Post extends React.Component {
         />
     return(
       <div className = "post">
-      {this.state.wait ? x : y}
+
+        <IconButton iconStyle={styles.smallIcon} style={styles.small} onClick={this.handleBack.bind(this)}>
+          <ArrowBack color='#fff' />
+        </IconButton>
+        {this.state.wait ? x : y}
       </div>
     )
   }
