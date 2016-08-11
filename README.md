@@ -71,3 +71,7 @@ handleClick(){
   router:React.PropTypes.object.isRequired
 }
 ```
+### 路由部署去除 # 号
+```
+history={browserHistory}
+```

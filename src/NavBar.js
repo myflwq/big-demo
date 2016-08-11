@@ -28,7 +28,7 @@ class NavBar extends React.Component {
       title:this.context.router.isActive('/', true) ? 'HOME' :
         this.context.router.isActive('/blog')? 'BLOG' :
         this.context.router.isActive('/account')? 'ACCOUNT' :
-        this.context.router.isActive('/about')? 'ABOUT' : 'HOME'
+        this.context.router.isActive('/about')? 'ABOUT' : 'POST'
     });
   }
   render () {
@@ -66,13 +66,13 @@ class NavBar extends React.Component {
               <Link to="/" activeStyle={{color: '#E91E63'}} style={styles.link} onlyActiveOnIndex={true}>HOME</Link>
             </MenuItem>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
-              <Link to="blog" activeStyle={{color: '#E91E63'}} style={styles.link}>BLOG</Link>
+              <Link to="/blog" activeStyle={{color: '#E91E63'}} style={styles.link}>BLOG</Link>
             </MenuItem>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
-              <Link to="account" activeStyle={{color: '#E91E63'}} style={styles.link}>ACCOUNT</Link>
+              <Link to="/account" activeStyle={{color: '#E91E63'}} style={styles.link}>ACCOUNT</Link>
             </MenuItem>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
-              <Link to="about" activeStyle={{color: '#E91E63'}} style={styles.link}>ABOUT</Link>
+              <Link to="/about" activeStyle={{color: '#E91E63'}} style={styles.link}>ABOUT</Link>
             </MenuItem>
           </div>
         </Drawer>
