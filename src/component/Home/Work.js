@@ -9,7 +9,7 @@ class Work extends React.Component {
         <a href="https://myflwq.github.io/resume" className="work-list">
           <Card className="work-card">
             <CardMedia
-              overlay={<CardTitle title="我的个人站" subtitle="个人简历" />}
+              overlay={<CardTitle title="我的个人站" subtitle="H5个人简历" />}
             >
               <img src="http://static7.depositphotos.com/1008939/726/i/950/depositphotos_7264018-Programmer.jpg" />
             </CardMedia>
@@ -33,19 +33,19 @@ class Work extends React.Component {
             </CardMedia>
           </Card>
         </a>
-        <a href="#" className="work-list">
+        <a href="https://myflwq.github.io/web" className="work-list">
           <Card className="work-card">
             <CardMedia
-              overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+              overlay={<CardTitle title="web开发" subtitle="PC端简单实例" />}
             >
               <img src="http://static7.depositphotos.com/1008939/726/i/950/depositphotos_7264018-Programmer.jpg" />
             </CardMedia>
           </Card>
         </a>
-        <a href="#" className="work-list">
+        <a href="https://myflwq.github.io/piano" className="work-list">
           <Card className="work-card">
             <CardMedia
-              overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+              overlay={<CardTitle title="H5小试" subtitle="来首钢琴曲吧" />}
             >
               <img src="http://static7.depositphotos.com/1008939/726/i/950/depositphotos_7264018-Programmer.jpg" />
             </CardMedia>
