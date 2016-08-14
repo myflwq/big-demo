@@ -41,7 +41,7 @@ class NavBar extends React.Component {
         backgroundColor:'#00BCD4',
         marginBottom:'20px',
         marginTop:'0',
-        fontFamilt:'Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif'
+        fontFamily:'Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif'
       },
       menu:{
         textAlign:'center'
