@@ -49,7 +49,8 @@ class NavBar extends React.Component {
       link:{
          textDecoration:'none',
          display:'block',
-         color:'#333'
+         color:'#333',
+         fontFamily:'Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif'
       }
     }
 
