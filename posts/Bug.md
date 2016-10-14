@@ -13,7 +13,7 @@
 
 > setState(...): Cannot update during an existing state transition (such as within `render` or another component's constructor). Render methods should be a pure function of props and state; constructor side-effects are an anti-pattern, but can be moved to `componentWillMount`.
 
->> ```render()```函数中无法在现有的状态更新转换，render的应该是纯粹的，```state```和```props```的改变可以放在```componentWillMount```中，但state的值已经改变
+>>```render()```函数中无法在现有的状态更新转换，render的应该是纯粹的，```state```和```props```的改变可以放在```componentWillMount```中，但state的值已经改变
 
 ***
 
