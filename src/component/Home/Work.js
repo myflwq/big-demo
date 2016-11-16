@@ -6,7 +6,7 @@ class Work extends React.Component {
   render () {
     return(
       <div className="work">
-        <a href="https://myflwq.github.io/resume" className="work-list">
+        <a href="http://myflwq.coding.me/myflwq/" className="work-list">
           <Card className="work-card">
             <CardMedia
               overlay={<CardTitle title="我的个人站" subtitle="H5个人简历" />}
